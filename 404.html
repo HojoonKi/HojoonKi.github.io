@@ -60,9 +60,9 @@
             deepLink = `gather://chat?id=${chatId}`;
             statusEl.textContent = `채팅방 "${chatId}"로 이동 중...`;
         } else if (path.startsWith('/profile/')) {
-            const userId = path.split('/profile/')[1];
-            deepLink = `gather://profile?id=${userId}`;
-            statusEl.textContent = `프로필 "${userId}"로 이동 중...`;
+            const nickname = path.split('/profile/')[1];
+            deepLink = `gather://profile?nickname=${nickname}`;
+            statusEl.textContent = `프로필 "${nickname}"로 이동 중...`;
         }
         
         // 즉시 딥링크 시도
